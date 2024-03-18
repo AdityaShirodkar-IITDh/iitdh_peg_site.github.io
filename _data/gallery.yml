@@ -1,0 +1,10 @@
+images:
+  - path: assets/images/lab/gan.webp
+  - path: assets/images/lab/efuse-top.webp
+  - path: assets/images/lab/gate_driver_pcb_layout.png
+  - path: assets/images/lab/opa855.webp
+  - path: assets/images/lab/rp2040.webp
+  - path: assets/images/lab/smart_watch.webp
+  - path: assets/images/lab/jmag_sim.jpeg
+  - path: assets/images/lab/gate_driver.jpeg
+  - path: assets/images/lab/smartchurn.jpg

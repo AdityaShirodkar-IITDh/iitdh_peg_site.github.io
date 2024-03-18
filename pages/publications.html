@@ -1,0 +1,30 @@
+---
+layout: default
+title: Publications
+permalink: "/publications/"
+background: "/img/bg-index.jpg"
+comments: false
+---
+
+
+<center>
+  <h1 style="color:rgb(108,27,133);margin-top: 100px">
+    <span style="border-bottom: 2px solid rgb(108,27,133);">Publications</span>
+  </h1>
+</center>
+<section class="row">
+  <h3>Journal Publications:</h3>
+  <div class="row">
+    {% for paper in site.posts%}{% if paper.category == "paper" %} {% if
+    paper.type == "journal" %}
+    <div class="col-md-12 mb-5">{% include papers.html %}</div>
+    {% endif %}{% endif %} {% endfor %}
+  </div>
+  <h3>Conference Publications:</h3>
+  <div class="row">
+    {% for paper in site.posts%} {% if paper.category == "paper" %}{% if
+    paper.type == "conference" %}
+    <div class="col-md-12 mb-5">{% include papers.html %}</div>
+    {% endif %} {% endif %} {% endfor %}
+  </div>
+</section>

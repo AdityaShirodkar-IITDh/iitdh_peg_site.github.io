@@ -1,0 +1,18 @@
+---
+layout: default
+title: Research
+permalink: "/research/"
+background: "/img/bg-index.jpg"
+comments: false
+---
+<section id="researchArea" class="p-5">
+  <div class="container">
+      <h1 style="color:rgb(108,27,133);margin-top:50px;">Research Areas</h1>
+      {% for research_areas in site.posts%}{% if research_areas.category == "research_area" %}
+      <div class="row align-items-center justify-content-between" style="border-bottom: 2px solid black">
+        {% include research_areas.html %}
+      </div>
+     {%endif%} {% endfor %}
+</div>
+
+

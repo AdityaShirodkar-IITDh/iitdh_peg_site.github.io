@@ -1,0 +1,53 @@
+---
+layout: default
+title: People
+permalink: "/people/"
+background: "/img/bg-index.jpg"
+comments: false
+---
+
+<!-- Home Intro The background and the text on it!
+================================================== -->
+
+<!-- Faculty
+================================================== -->
+<center>
+  <!-- <h1 style="margin-top: 100px;margin-bottom: 20px;">FACULTY</h1> -->
+<h1 style="color:rgb(108,27,133);margin-top:100px;margin-bottom: 30px">
+  <span style="border-bottom: 2px solid rgb(108,27,133)">FACULTY</span>
+</h1>
+</center>
+<section class="row">
+  <div class="row">
+    {% for people in site.posts%}{% if people.category == "faculty" %}
+    <div class="col-md-4 mb-5">{% include people.html %}</div>
+    {% endif %} {% endfor %}
+  </div>
+</section>
+
+<center>
+  <!-- <h1 style="margin-top: 100px;margin-bottom: 20px;">FACULTY</h1> -->
+<h1 style="color:rgb(108,27,133);margin-top:10px;margin-bottom: 30px">
+  <span style="border-bottom: 2px solid rgb(108,27,133)">STUDENTS</span>
+</h1>
+</center>
+
+<h3 style="margin-bottom: 30px; border-bottom: 1000px;">PRESENT STUDENTS</h3>
+<section class="row">
+  <div class="row">
+    {% for people in site.posts%}{% if people.category == "student" %}
+    {% if people.status == "present" %}
+    <div class="col-md-3 mb-4">{% include people.html %}</div>
+    {% endif %}{% endif %} {% endfor %}
+  </div>
+</section>
+
+<h3 style="margin-bottom: 30px; border-bottom: 1000px;">PAST STUDENTS</h3>
+<section class="row">
+  <div class="row">
+    {% for people in site.posts%}{% if people.category == "student" %}
+    {% if people.status == "past" %}
+    <div class="col-md-3 mb-4">{% include people.html %}</div>
+    {% endif %}{% endif %} {% endfor %}
+  </div>
+</section>

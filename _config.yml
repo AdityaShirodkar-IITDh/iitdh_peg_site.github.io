@@ -1,7 +1,7 @@
 title: "Power and Energy Group IIT Dharwad"
 email: tella.rajashekhar@gmail.com
 timezone: UTC
-baseurl: ""
+baseurl: "https://adityashirodkar-iitdh.github.io/iitdh_peg_site.github.io/"
 permalink: "/:title/"
 logo: "assets/images/peg_logo.svg"
 favicon: "assets/images/favicon.ico"

@@ -1,7 +1,7 @@
 ---
 layout: post
 category: research_area
-title: "Solid State Circuit Breakers"
+title: "Solid State DC Circuit Breakers"
 image: assets/images/dccb_research_area.png
 ---
 
